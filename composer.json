@@ -1,0 +1,16 @@
+{
+    "name": "mohammad-alavi/apiato-stripe-payment-gateway",
+    "description": "Implementation of Stripe gateway for Apiato Payment Container",
+    "type": "apiato-container",
+    "license": "MIT",
+    "require": {
+        "cartalyst/stripe-laravel": "^13.1.0"
+    },
+    "extra": {
+        "apiato": {
+            "container": {
+                "name": "Stripe"
+            }
+        }
+    }
+}
