@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Stripe\UI\API\Requests;
+namespace App\Containers\VendorSection\StripeStripe\UI\API\Requests;
 
 use App\Ship\Parents\Requests\Request;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Modules\Stripe\Tasks;
+namespace App\Containers\VendorSection\StripeStripe\Tasks;
 
-use App\Modules\Payment\Contracts\ChargeableInterface;
-use App\Modules\Payment\Contracts\PaymentChargerInterface;
-use App\Modules\Payment\Models\AbstractPaymentAccount;
-use App\Modules\Payment\Models\PaymentTransaction;
-use App\Modules\Stripe\Exceptions\StripeAccountNotFoundException;
-use App\Modules\Stripe\Exceptions\StripeApiErrorException;
+use App\Containers\VendorSection\StripePayment\Contracts\ChargeableInterface;
+use App\Containers\VendorSection\StripePayment\Contracts\PaymentChargerInterface;
+use App\Containers\VendorSection\StripePayment\Models\AbstractPaymentAccount;
+use App\Containers\VendorSection\StripePayment\Models\PaymentTransaction;
+use App\Containers\VendorSection\StripeStripe\Exceptions\StripeAccountNotFoundException;
+use App\Containers\VendorSection\StripeStripe\Exceptions\StripeApiErrorException;
 use App\Ship\Parents\Tasks\Task;
 use Cartalyst\Stripe\Stripe;
 use Exception;

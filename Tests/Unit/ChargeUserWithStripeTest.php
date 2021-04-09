@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\Stripe\Tests\Unit;
+namespace App\Containers\VendorSection\StripeStripe\Tests\Unit;
 
-use App\Modules\Payment\Tasks\AssignPaymentAccountToUserTask;
-use App\Modules\Payment\Traits\MockablePaymentsTrait;
-use App\Modules\Stripe\Models\StripeAccount;
-use App\Modules\Stripe\Tests\TestCase;
+use App\Containers\VendorSection\StripePayment\Tasks\AssignPaymentAccountToUserTask;
+use App\Containers\VendorSection\StripePayment\Traits\MockablePaymentsTrait;
+use App\Containers\VendorSection\StripeStripe\Models\StripeAccount;
+use App\Containers\VendorSection\StripeStripe\Tests\TestCase;
 use Illuminate\Support\Facades\App;
 
 /**

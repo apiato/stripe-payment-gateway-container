@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\Stripe\UI\API\Tests\Functional;
+namespace App\Containers\VendorSection\StripeStripe\UI\API\Tests\Functional;
 
-use App\Modules\Stripe\Tests\ApiTestCase;
+use App\Containers\VendorSection\StripeStripe\Tests\ApiTestCase;
 
 /**
  * Class CreateStripeAccountTest.

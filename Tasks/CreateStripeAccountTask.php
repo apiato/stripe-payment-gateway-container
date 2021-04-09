@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\Stripe\Tasks;
+namespace App\Containers\VendorSection\StripeStripe\Tasks;
 
-use App\Modules\Stripe\Data\Repositories\StripeAccountRepository;
+use App\Containers\VendorSection\StripeStripe\Data\Repositories\StripeAccountRepository;
 use App\Ship\Exceptions\CreateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;

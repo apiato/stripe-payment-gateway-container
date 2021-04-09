@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Stripe\Actions;
+namespace App\Containers\VendorSection\StripeStripe\Actions;
 
 use Apiato\Core\Foundation\Facades\Apiato;
-use App\Modules\Stripe\UI\API\Requests\CreateStripeAccountRequest;
+use App\Containers\VendorSection\StripeStripe\UI\API\Requests\CreateStripeAccountRequest;
 use App\Ship\Parents\Actions\Action;
 
 class CreateStripeAccountAction extends Action

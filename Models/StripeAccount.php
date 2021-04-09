@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\Stripe\Models;
+namespace App\Containers\VendorSection\StripeStripe\Models;
 
-use App\Modules\Payment\Models\AbstractPaymentAccount;
+use App\Containers\VendorSection\StripePayment\Models\AbstractPaymentAccount;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class StripeAccount extends AbstractPaymentAccount

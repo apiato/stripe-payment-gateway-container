@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Modules\Stripe\UI\API\Controllers;
+namespace App\Containers\VendorSection\StripeStripe\UI\API\Controllers;
 
 use Apiato\Core\Foundation\Facades\Apiato;
-use App\Modules\Stripe\UI\API\Requests\CreateStripeAccountRequest;
-use App\Modules\Stripe\UI\API\Requests\UpdateStripeAccountRequest;
+use App\Containers\VendorSection\StripeStripe\UI\API\Requests\CreateStripeAccountRequest;
+use App\Containers\VendorSection\StripeStripe\UI\API\Requests\UpdateStripeAccountRequest;
 use App\Ship\Parents\Controllers\ApiController;
 use Illuminate\Http\JsonResponse;
 

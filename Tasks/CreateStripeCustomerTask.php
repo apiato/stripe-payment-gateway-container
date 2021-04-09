@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\Stripe\Tasks;
+namespace App\Containers\VendorSection\StripeStripe\Tasks;
 
-use App\Modules\Stripe\Exceptions\StripeApiErrorException;
+use App\Containers\VendorSection\StripeStripe\Exceptions\StripeApiErrorException;
 use App\Ship\Parents\Tasks\Task;
 use Cartalyst\Stripe\Stripe;
 use Exception;
