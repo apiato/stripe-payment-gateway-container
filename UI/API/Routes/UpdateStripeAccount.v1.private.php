@@ -17,7 +17,7 @@
  * }
  */
 
-use App\Containers\VendorSection\StripeStripe\UI\API\Controllers\Controller;
+use App\Containers\VendorSection\Stripe\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::patch('user/payments/accounts/stripe/{id}', [Controller::class, 'updateStripeAccount'])

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\VendorSection\StripeStripe\Models;
+namespace App\Containers\VendorSection\Stripe\Models;
 
 use App\Containers\VendorSection\StripePayment\Models\AbstractPaymentAccount;
 use Illuminate\Database\Eloquent\SoftDeletes;

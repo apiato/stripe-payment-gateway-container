@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Containers\VendorSection\StripeStripe\Actions;
+namespace App\Containers\VendorSection\Stripe\Actions;
 
 use Apiato\Core\Foundation\Facades\Apiato;
-use App\Containers\VendorSection\StripeStripe\Models\StripeAccount;
-use App\Containers\VendorSection\StripeStripe\UI\API\Requests\UpdateStripeAccountRequest;
+use App\Containers\VendorSection\Stripe\Models\StripeAccount;
+use App\Containers\VendorSection\Stripe\UI\API\Requests\UpdateStripeAccountRequest;
 use App\Ship\Parents\Actions\Action;
 
 class UpdateStripeAccountAction extends Action

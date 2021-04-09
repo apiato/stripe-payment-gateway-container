@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\VendorSection\StripeStripe\Tasks;
+namespace App\Containers\VendorSection\Stripe\Tasks;
 
-use App\Containers\VendorSection\StripeStripe\Data\Repositories\StripeAccountRepository;
-use App\Containers\VendorSection\StripeStripe\Models\StripeAccount;
+use App\Containers\VendorSection\Stripe\Data\Repositories\StripeAccountRepository;
+use App\Containers\VendorSection\Stripe\Models\StripeAccount;
 use App\Ship\Exceptions\UpdateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;

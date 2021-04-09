@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\VendorSection\StripeStripe\Data\Factories;
+namespace App\Containers\VendorSection\Stripe\Data\Factories;
 
-use App\Containers\VendorSection\StripeStripe\Models\StripeAccount;
+use App\Containers\VendorSection\Stripe\Models\StripeAccount;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class StripeAccountFactory extends Factory

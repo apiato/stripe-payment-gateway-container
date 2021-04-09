@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\VendorSection\StripeStripe\Tests;
+namespace App\Containers\VendorSection\Stripe\Tests;
 
 use App\Ship\Parents\Tests\PhpUnit\TestCase as ShipTestCase;
 

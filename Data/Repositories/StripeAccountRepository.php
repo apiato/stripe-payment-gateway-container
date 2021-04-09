@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\VendorSection\StripeStripe\Data\Repositories;
+namespace App\Containers\VendorSection\Stripe\Data\Repositories;
 
-use App\Containers\VendorSection\StripeStripe\Models\StripeAccount;
+use App\Containers\VendorSection\Stripe\Models\StripeAccount;
 use App\Ship\Parents\Repositories\Repository;
 
 class StripeAccountRepository extends Repository

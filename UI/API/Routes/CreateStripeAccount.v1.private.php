@@ -26,7 +26,7 @@
  * }
  */
 
-use App\Containers\VendorSection\StripeStripe\UI\API\Controllers\Controller;
+use App\Containers\VendorSection\Stripe\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/user/payments/accounts/stripe', [Controller::class, 'createStripeAccount'])

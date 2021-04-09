@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\VendorSection\StripeStripe\Tests;
+namespace App\Containers\VendorSection\Stripe\Tests;
 
-use App\Containers\VendorSection\StripeStripe\Tests\TestCase as BaseTestCase;
+use App\Containers\VendorSection\Stripe\Tests\TestCase as BaseTestCase;
 
 /**
  * Class ApiTestCase.
