@@ -2,7 +2,7 @@
 
 namespace App\Containers\VendorSection\Stripe\Models;
 
-use App\Containers\VendorSection\StripePayment\Models\AbstractPaymentAccount;
+use App\Containers\VendorSection\Payment\Models\AbstractPaymentAccount;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class StripeAccount extends AbstractPaymentAccount

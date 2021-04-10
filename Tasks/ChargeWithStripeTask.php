@@ -2,10 +2,10 @@
 
 namespace App\Containers\VendorSection\Stripe\Tasks;
 
-use App\Containers\VendorSection\StripePayment\Contracts\ChargeableInterface;
-use App\Containers\VendorSection\StripePayment\Contracts\PaymentChargerInterface;
-use App\Containers\VendorSection\StripePayment\Models\AbstractPaymentAccount;
-use App\Containers\VendorSection\StripePayment\Models\PaymentTransaction;
+use App\Containers\VendorSection\Payment\Contracts\ChargeableInterface;
+use App\Containers\VendorSection\Payment\Contracts\PaymentChargerInterface;
+use App\Containers\VendorSection\Payment\Models\AbstractPaymentAccount;
+use App\Containers\VendorSection\Payment\Models\PaymentTransaction;
 use App\Containers\VendorSection\Stripe\Exceptions\StripeAccountNotFoundException;
 use App\Containers\VendorSection\Stripe\Exceptions\StripeApiErrorException;
 use App\Ship\Parents\Tasks\Task;
