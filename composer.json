@@ -1,5 +1,5 @@
 {
-    "name": "mohammad-alavi/apiato-stripe-payment-gateway",
+    "name": "apiato/stripe-payment-gateway-container",
     "description": "Implementation of Stripe gateway for Apiato Payment Container",
     "type": "apiato-container",
     "license": "MIT",
