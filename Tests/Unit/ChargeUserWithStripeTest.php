@@ -2,8 +2,8 @@
 
 namespace App\Containers\VendorSection\Stripe\Tests\Unit;
 
-use App\Containers\VendorSection\StripePayment\Tasks\AssignPaymentAccountToUserTask;
-use App\Containers\VendorSection\StripePayment\Traits\MockablePaymentsTrait;
+use App\Containers\VendorSection\Payment\Tasks\AssignPaymentAccountToUserTask;
+use App\Containers\VendorSection\Payment\Traits\MockablePaymentsTrait;
 use App\Containers\VendorSection\Stripe\Models\StripeAccount;
 use App\Containers\VendorSection\Stripe\Tests\TestCase;
 use Illuminate\Support\Facades\App;
