@@ -6,7 +6,6 @@ use App\Containers\VendorSection\Payment\Tasks\AssignPaymentAccountToUserTask;
 use App\Containers\VendorSection\Payment\Traits\MockablePaymentsTrait;
 use App\Containers\VendorSection\Stripe\Models\StripeAccount;
 use App\Containers\VendorSection\Stripe\Tests\TestCase;
-use Illuminate\Support\Facades\App;
 
 /**
  * Class ChargeUserWithStripeTest
@@ -18,21 +17,21 @@ use Illuminate\Support\Facades\App;
  */
 class ChargeUserWithStripeTest extends TestCase
 {
-    use MockablePaymentsTrait;
+	use MockablePaymentsTrait;
 
-    public function testChargeUserWithStripe(): void
-    {
-        $this->mockPayments();
-        $user = $this->getTestingUser();
-        $stripeAccount = StripeAccount::factory()->create([
-            'customer_id' => 'cus_8mBD5S1SoyD4zL',
-        ]);
-        $amount = 100;
-        App::make(AssignPaymentAccountToUserTask::class)->run($stripeAccount, $user, 'nickname');
+	public function testChargeUserWithStripe(): void
+	{
+		$this->mockPayments();
+		$user = $this->getTestingUser();
+		$stripeAccount = StripeAccount::factory()->create([
+			'customer_id' => 'cus_8mBD5S1SoyD4zL',
+		]);
+		$amount = 100;
+		app(AssignPaymentAccountToUserTask::class)->run($stripeAccount, $user, 'nickname');
 
-        $account = $user->paymentAccounts->first();
-        $transaction = $user->charge($account, $amount);
+		$account = $user->paymentAccounts->first();
+		$transaction = $user->charge($account, $amount);
 
-        self::assertEquals($transaction->gateway, 'Stripe');
-    }
+		self::assertEquals($transaction->gateway, 'Stripe');
+	}
 }

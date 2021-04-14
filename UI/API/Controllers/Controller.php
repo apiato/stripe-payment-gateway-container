@@ -2,7 +2,6 @@
 
 namespace App\Containers\VendorSection\Stripe\UI\API\Controllers;
 
-use Apiato\Core\Foundation\Facades\Apiato;
 use App\Containers\VendorSection\Stripe\Actions\CreateStripeAccountAction;
 use App\Containers\VendorSection\Stripe\Actions\UpdateStripeAccountAction;
 use App\Containers\VendorSection\Stripe\UI\API\Requests\CreateStripeAccountRequest;
@@ -14,7 +13,7 @@ class Controller extends ApiController
 {
 	public function createStripeAccount(CreateStripeAccountRequest $request): JsonResponse
 	{
-		$stripeAccount = Apiato::call(CreateStripeAccountAction::class, [$request]);
+		$stripeAccount = app(CreateStripeAccountAction::class)->run($request);
 
 		return $this->accepted([
 			'message' => 'Stripe account created successfully.',
@@ -24,7 +23,7 @@ class Controller extends ApiController
 
 	public function updateStripeAccount(UpdateStripeAccountRequest $request): JsonResponse
 	{
-		$stripeAccount = Apiato::call(UpdateStripeAccountAction::class, [$request]);
+		$stripeAccount = app(UpdateStripeAccountAction::class)->run($request);
 
 		return $this->accepted([
 			'message' => 'Stripe account updated successfully.',

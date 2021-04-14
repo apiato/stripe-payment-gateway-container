@@ -2,7 +2,6 @@
 
 namespace App\Containers\VendorSection\Stripe\Actions;
 
-use Apiato\Core\Foundation\Facades\Apiato;
 use App\Containers\AppSection\Authentication\Tasks\GetAuthenticatedUserTask;
 use App\Containers\VendorSection\Payment\Tasks\AssignPaymentAccountToUserTask;
 use App\Containers\VendorSection\Stripe\Tasks\CreateStripeAccountTask;
@@ -11,11 +10,11 @@ use App\Ship\Parents\Actions\Action;
 
 class CreateStripeAccountAction extends Action
 {
-	public function run(CreateStripeAccountRequest $data)
+	public function run(CreateStripeAccountRequest $request)
 	{
-		$user = Apiato::call(GetAuthenticatedUserTask::class);
+		$user = app(GetAuthenticatedUserTask::class)->run();
 
-		$sanitizedData = $data->sanitizeInput([
+		$sanitizedData = $request->sanitizeInput([
 			'customer_id',
 			'card_id',
 			'card_funding',
@@ -24,8 +23,8 @@ class CreateStripeAccountAction extends Action
 			'nickname',
 		]);
 
-		$account = Apiato::call(CreateStripeAccountTask::class, [$sanitizedData]);
+		$account = app(CreateStripeAccountTask::class)->run($sanitizedData);
 
-		return Apiato::call(AssignPaymentAccountToUserTask::class, [$account, $user, $sanitizedData['nickname']]);
+		return app(AssignPaymentAccountToUserTask::class)->run($account, $user, $sanitizedData['nickname']);
 	}
 }
