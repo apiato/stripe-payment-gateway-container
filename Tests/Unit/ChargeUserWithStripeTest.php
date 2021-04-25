@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Containers\VendorSection\Stripe\Tests\Unit;
+namespace App\Containers\Vendor\Stripe\Tests\Unit;
 
-use App\Containers\VendorSection\Payment\Tasks\AssignPaymentAccountToUserTask;
-use App\Containers\VendorSection\Payment\Traits\MockablePaymentsTrait;
-use App\Containers\VendorSection\Stripe\Models\StripeAccount;
-use App\Containers\VendorSection\Stripe\Tests\TestCase;
+use App\Containers\Vendor\Payment\Tasks\AssignPaymentAccountToUserTask;
+use App\Containers\Vendor\Payment\Traits\MockablePaymentsTrait;
+use App\Containers\Vendor\Stripe\Models\StripeAccount;
+use App\Containers\Vendor\Stripe\Tests\TestCase;
 
 /**
  * Class ChargeUserWithStripeTest

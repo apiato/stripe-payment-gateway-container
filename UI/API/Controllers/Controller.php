@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Containers\VendorSection\Stripe\UI\API\Controllers;
+namespace App\Containers\Vendor\Stripe\UI\API\Controllers;
 
-use App\Containers\VendorSection\Stripe\Actions\CreateStripeAccountAction;
-use App\Containers\VendorSection\Stripe\Actions\UpdateStripeAccountAction;
-use App\Containers\VendorSection\Stripe\UI\API\Requests\CreateStripeAccountRequest;
-use App\Containers\VendorSection\Stripe\UI\API\Requests\UpdateStripeAccountRequest;
+use App\Containers\Vendor\Stripe\Actions\CreateStripeAccountAction;
+use App\Containers\Vendor\Stripe\Actions\UpdateStripeAccountAction;
+use App\Containers\Vendor\Stripe\UI\API\Requests\CreateStripeAccountRequest;
+use App\Containers\Vendor\Stripe\UI\API\Requests\UpdateStripeAccountRequest;
 use App\Ship\Parents\Controllers\ApiController;
 use Illuminate\Http\JsonResponse;
 

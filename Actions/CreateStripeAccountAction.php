@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Containers\VendorSection\Stripe\Actions;
+namespace App\Containers\Vendor\Stripe\Actions;
 
 use App\Containers\AppSection\Authentication\Tasks\GetAuthenticatedUserTask;
-use App\Containers\VendorSection\Payment\Tasks\AssignPaymentAccountToUserTask;
-use App\Containers\VendorSection\Stripe\Tasks\CreateStripeAccountTask;
-use App\Containers\VendorSection\Stripe\UI\API\Requests\CreateStripeAccountRequest;
+use App\Containers\Vendor\Payment\Tasks\AssignPaymentAccountToUserTask;
+use App\Containers\Vendor\Stripe\Tasks\CreateStripeAccountTask;
+use App\Containers\Vendor\Stripe\UI\API\Requests\CreateStripeAccountRequest;
 use App\Ship\Parents\Actions\Action;
 
 class CreateStripeAccountAction extends Action

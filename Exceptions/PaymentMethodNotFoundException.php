@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\VendorSection\Stripe\Exceptions;
+namespace App\Containers\Vendor\Stripe\Exceptions;
 
 use App\Ship\Parents\Exceptions\Exception;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;

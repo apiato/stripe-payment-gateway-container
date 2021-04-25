@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\VendorSection\Stripe\Providers;
+namespace App\Containers\Vendor\Stripe\Providers;
 
 use App\Ship\Parents\Providers\MainProvider;
 use Cartalyst\Stripe\Laravel\Facades\Stripe;

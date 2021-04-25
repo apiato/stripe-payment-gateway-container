@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Containers\VendorSection\Stripe\Actions;
+namespace App\Containers\Vendor\Stripe\Actions;
 
 use App\Containers\AppSection\Authentication\Tasks\GetAuthenticatedUserTask;
-use App\Containers\VendorSection\Payment\Tasks\CheckIfPaymentAccountBelongsToUserTask;
-use App\Containers\VendorSection\Stripe\Models\StripeAccount;
-use App\Containers\VendorSection\Stripe\Tasks\FindStripeAccountByIdTask;
-use App\Containers\VendorSection\Stripe\Tasks\UpdateStripeAccountTask;
-use App\Containers\VendorSection\Stripe\UI\API\Requests\UpdateStripeAccountRequest;
+use App\Containers\Vendor\Payment\Tasks\CheckIfPaymentAccountBelongsToUserTask;
+use App\Containers\Vendor\Stripe\Models\StripeAccount;
+use App\Containers\Vendor\Stripe\Tasks\FindStripeAccountByIdTask;
+use App\Containers\Vendor\Stripe\Tasks\UpdateStripeAccountTask;
+use App\Containers\Vendor\Stripe\UI\API\Requests\UpdateStripeAccountRequest;
 use App\Ship\Parents\Actions\Action;
 
 class UpdateStripeAccountAction extends Action
